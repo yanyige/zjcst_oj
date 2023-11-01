@@ -1,13 +1,14 @@
 <template>
   <div>
     <NavBar></NavBar>
+    <div class="banner"><img src="../../assets/banner.jpg"></div>
     <div class="content-app">
       <transition name="fadeInUp" mode="out-in">
         <router-view></router-view>
       </transition>
       <div class="footer">
         <p v-html="website.website_footer"></p>
-        <p>Powered by <a href="https://github.com/QingdaoU/OnlineJudge">OnlineJudge</a>
+        <p>Powered by <a href="http://yanyige.github.io/">社团</a>
           <span v-if="version">&nbsp; Version: {{ version }}</span>
         </p>
       </div>
@@ -75,14 +76,14 @@
 
   @media screen and (max-width: 1200px) {
   .content-app {
-    margin-top: 160px;
+    margin-top: 10px;
     padding: 0 2%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-app {
-    margin-top: 80px;
+    margin-top: 10px;
     padding: 0 2%;
   }
 }
@@ -96,6 +97,18 @@
 
   .fadeInUp-enter-active {
     animation: fadeInUp .8s;
+  }
+
+  .banner {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 100%;
   }
 
 

@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <Menu theme="light" mode="horizontal" @on-select="handleRoute" :active-name="activeMenu" class="oj-menu">
-      <div class="logo"><span>{{website.website_name}}</span></div>
+      <div class="logo"><div></div></div>
       <Menu-item name="/">
         <Icon type="home"></Icon>
         {{$t('m.Home')}}
@@ -148,6 +148,16 @@
       font-size: 20px;
       float: left;
       line-height: 60px;
+      background-image: url("../../../assets/zjcst.png");
+      background-size: 100%;
+      height: 100%;
+    }
+
+    .logo {
+      div {
+        width: 60px;
+        height: 100%;
+      }
     }
 
     .drop-menu {

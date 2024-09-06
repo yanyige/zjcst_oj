@@ -8,7 +8,7 @@
       </transition>
       <div class="footer">
         <p v-html="website.website_footer"></p>
-        <p>Powered by <a href="http://yanyige.github.io/">社团</a>
+        <p>Powered by <a href="http://yanyige.github.io/">Yige Yan</a>
           <span v-if="version">&nbsp; Version: {{ version }}</span>
         </p>
       </div>
